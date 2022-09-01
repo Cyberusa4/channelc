@@ -29,7 +29,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 OWNER = os.environ.get("OWNER", "mrismanaziz")
 
 # Protect Content
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -60,7 +60,7 @@ except ValueError:
 # Pesan Saat Memaksa Subscribe
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nAnda harus join Terlebih dahulu\n\nSilakan Join Terlebih Dahulu</b>",
+    "<b>Hello {first}\n\nAnda harus join channel Terlebih dahulu</b>",
 )
 
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
